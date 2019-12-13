@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blind Adapation to Board Games</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+<!--NavBar-->
+       <nav class="navbar navbar-expand">
+          <a class="navbar-brand">BBG</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link about" href="#about">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:brewers8534@gmail.com?Subject=Blind%20Board%20Gaming%20Question" target = "_top">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav><!--end nav bar-->
+<!--header-->
+        <header>
+            <h1 class = "title">Blind Board Gaming</h1>
+            <h3 class = "title">Tips and tricks to adapt board games for blind players</h3>
+            <h5 class = "title">Click the images for more information on that game!</h5>
+        </header>
+        
+<!--Main body-->
+        <div class="container">
+            <div id="about">
+                <h1>About</h1>
+                <p>My name is Dave Hayes.  My wife, Sarah, went blind during her early 20s, and was legally blind when we met.  She had to give up things she enjoyed like reading books herself (she uses audio books now), and putting together puzzles.  We did crossword puzzles together where I would read the clues while we dated.  We have since become avid board game players.  Some of these games are easy to adapt and some are much harder.  I'd like to use this site to illustrate the level of accomodations we needed for games that we enjoy playing.</p>
+            </div>
+            <div class="row">
+                <div class="card col-lg-4" style="width: 25rem;">
+                  <img src="images/PandemicCover.jpg" id ="pandemic" class="card-img-top" alt="Pandemic" onclick="reveal(this)">
+                  <img src="images/pandemicOpen.jpg" id ="pandemicOpen" class="card-img-top open" alt="Pandemic Open" onclick="reveal(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Pandemic</h5>
+                    <p class="card-text">
+                        <strong>Concept: </strong>Pandemic is a cooperative board game where players work together to stop disease outbreaks and epidemics.
+                        <br><strong>Adaptability: </strong>Easy
+                        <br><strong>Tricks: </strong>By being cooperative, I could explain to Sarah the cards in our hands, and our position on the board.  She has a good sense of geography to know which places would be reasonably close to one another so the map works well.  
+                     </p>
+                  </div>
+                </div>
+                <div class="card col-lg-4" style="width: 25rem;">
+                  <img src="images/TroyesCover.jpg" id="troyes" class="card-img-top" alt="Troyes" onclick="reveal(this)">
+                  <img src="images/TroyesOpen.jpg" id="troyesOpen" class="card-img-top open" alt="Troyes Open" onclick="reveal(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Troyes</h5>
+                    <p class="card-text">
+                        <strong>Concept: </strong>Troyes is a competitive game set in Medival France.  Players are trying to score the most points in a set number of turns, determined by the number of players.  Players can earn points by building the cathedral, establishing merchents, having more people in buildings, accumulating gold, and or prestige.
+                        <br><strong>Adaptability: </strong>Medium
+                        <br><strong>Tricks: </strong>Most of the cards are face up during play, so a lot of information is available to all players and somewhat easily communicated.  Sarah tends to get a little overwhelemed with a lot of the options late in the game, and this has caused her to often choose a different game over this one.  You do have one secret leader card out of six cards, but with braille labels on only 6 cards this was an easy adjustment to make.  
+                     </p>
+                  </div>
+                </div>
+                <div class="card col-lg-4" style="width: 25rem;">
+                  <img src="images/TSCover.jpg" class="card-img-top" alt="Twighlight Struggle" onclick=reveal(this)>
+                  <img src="images/TSOpen.jpg" class="card-img-top open" alt="Twighlight Struggle Open" onclick=reveal(this)>
+                  <div class="card-body">
+                    <h5 class="card-title">Twighlight Struggle</h5>
+                    <p class="card-text">
+                        <strong>Concept: </strong>Twighlight Struggle is a two player competitive game that has one player take on the role of the United States and the other the Soviet Union during the Cold War 1945-1989.
+                        <br><strong>Adaptability: </strong>Excel Required - Advanced
+                        <br><strong>Tricks: </strong>This is a card based game.  Each player draws up to 8 cards and in later rounds 9 cards from a single deck of cards.  I had to create an excel macro that shuffles the deck and deals two hands of cards.  Fortunately, the cards are all numbered from 1-103.  I have 3 digit code numbers for Sarah's hand and when she enters them into her spreadsheet she can read the card title and text using her screen reader.  She also tracks where the influence markers are on the board with her Excel spreadsheet as well.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card col-lg-4" style="width: 25rem;">
+                  <img src="images/TPCover.jpg" class="card-img-top" alt="Trivial Pursuit" onclick="reveal(this)">
+                  <img src="images/TPopen.jpg" class="card-img-top open" alt="Trivial Pursuit open" onclick="reveal(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Trivial Pursuit</h5>
+                    <p class="card-text">
+                        <strong>Concept: </strong>Trivial Pursuit is a triva game.  One side of a card has 6 questions on it, and the other side has the 6 answers.  The first player to answer a question on each of the pie spaces wins.
+                        <br><strong>Adaptability: </strong>Easy
+                        <br><strong>Tricks: </strong>Trivial Pursuit is easy to adapt as long as I read all the questions.  Some trivia games have the question and answer on the same line, and those trivia games would not work for us.
+                    </p>
+                  </div>
+                </div>
+                <div class="card col-lg-4" style="width: 25rem;">
+                  <img src="images/CivNewDawnCover.jpg" class="card-img-top" alt="Civ New Dawn" onclick="reveal(this)">
+                  <img src="images/newdawnOpen.jpg" class="card-img-top open" alt="Civ New Dawn open" onclick="reveal(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Civilization: New Dawn</h5>
+                    <p class="card-text">
+                      <strong>Concept: </strong>Civilization: New Dawn is a board game loosely based on the PC game Cvilization VI.  You control a leader with some special abiliies and the victory conditions are randomly generated each game.
+                      <br><strong>Adaptability: </strong>Medium
+                      <br><strong>Tricks: </strong>All of the cards are face up during play, so a lot of information is available to all players and somewhat easily communicated.  You have 5 cards in a row and choose which one you want to use that turn it then moves to the bottom of the line (i.e. if you play the card in the 4 spot it moves to the 1 spot, and the others shift up).  Creating the board is the only challenge we run into in this game.  Both players are supposed to take turns placing tiles, but Sarah can't really participate in that process.  I don't like making the board completely on my own.  Starting position and what resources are near you is a big part of the game.  I'd like to create an excel based map generator (the map tiles are numbered with an a or b side), but I haven't done that yet.  Then in cases like this to be fair I ask Sarah "Do you want to start in A or B location?"  This creates a random start for both of us.  
+                    </p>
+                  </div>
+                </div>
+                <div class="card col-lg-4" style="width: 25rem;">
+                  <img src="images/rebellionCover.jpg" class="card-img-top" alt="Star Wars Rebellion" onclick="reveal(this)">
+                  <img src="images/rebellionOpen.jpg" class="card-img-top open" alt="Star Wars Rebellion" onclick="reveal(this)">
+                  <div class="card-body">
+                    <h5 class="card-title">Star Wars Rebellion</h5>
+                    <p class="card-text">
+                        <strong>Concept: </strong>Star Wars Rebellion is a two player competitive game that has one player take on the role of the Empire and the other the Rebels.  The Empire wins by finding and destroying the Rebel Base.  The Rebels win by achieving objectives to end the game as fast as possible with their base intact.
+                        <br><strong>Adaptability: </strong>Excel Required - Advanced
+                        <br><strong>Tricks: </strong>This is a card based game.  Each player draws mission cards every turn from their own deck.  The Empire has a second deck of cards called Projects, while the Rebels have an Objective deck.  I had to create an excel macro that shuffles these decks and deals the appropriate number of cards.  I had to make accomodations for "Draw two cards choose one put the other back on the bottom of the deck."  The map is more complicated because it's Star Wars planets rather than countries.  Sarah has learned the layout of the map over time.  The planets are clustered in 8 regions, and we use baseball terms to describe the region locations.  There are three regions across the top (Outfield), 4 through the middle (Infield), and one at the middle bottom (Catcher).  Sarah being a baseball fan helped with the map.</p>
+                  </div>
+                </div>
+            </div><!--End Row-->
+        
+        </div><!--end Main Body-->
+<!--Footer        -->
+         <nav class="navbar navbar-expand">
+          <a class="navbar-brand">Dave Hayes 2019</a>
+          <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav><!--end footer-->
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

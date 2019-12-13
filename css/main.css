@@ -1,0 +1,58 @@
+.navbar {
+    background-color:#09BC8A;
+}
+
+.nav-link {
+    color: black;
+}
+
+header {
+    background-color: #004346;
+    border-bottom: solid 2px #172A3A;
+}
+
+.title {
+    text-align: center;
+    color: #508991;
+    text-shadow: 4px 4px black;
+}
+
+body {
+    background-color: #508991;
+    
+}
+
+.card {
+    background-color: #508991;
+    border: none;
+    margin: auto;
+}
+
+p {
+    margin-bottom: 60px;
+}
+
+.card-img-top {
+  margin: 20px ;
+  cursor: pointer;
+}
+
+/** Media Queries **/
+
+@media only screen and (min-width: 888px) {
+    
+    header {
+        padding: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    h1.title {
+        font-size: 75px;
+    }
+    
+    .title {
+        text-shadow: 2px;
+        font-weight: 1000;
+    }
+
+}
